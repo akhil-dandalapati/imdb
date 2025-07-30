@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./movieList.css";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import Card from "../cardfolder/card";
+import Cards from "../cardfolder/card";
 
 const MovieList = () => {
   const [movieList, setMovieList] = useState([]);
@@ -36,7 +36,7 @@ const MovieList = () => {
         }}
       >
         {movieList.map((movie) => (
-          <Card movie={movie} key={movie.id} />
+          <Cards movie={movie} key={movie.id} />
         ))}
       </div>
     </div>
