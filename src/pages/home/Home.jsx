@@ -4,7 +4,6 @@ import { Carousel } from "react-responsive-carousel";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./home.css";
-import Card from "../../components/card/card";
 import MovieList from "../../components/movieList/MovieList";
 
 const Home = () => {
