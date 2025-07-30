@@ -1,0 +1,45 @@
+.navbar {
+  background-color: black;
+  z-index: 2000;
+  box-shadow: 0 2px 5px rgba(248, 248, 247, 0.221); /* IMDb Yellow shadow */
+}
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: white !important;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ddd !important;
+  transform: scale(1.1);
+}
+
+/* ACTIVE link underline animation */
+.nav-link.active-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f5c518;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f5c518;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+}

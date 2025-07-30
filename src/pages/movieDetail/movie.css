@@ -1,0 +1,26 @@
+.moviepage {
+  position: relative !important;
+}
+
+.productionCompanyImage span {
+  width: 150px !important;
+}
+.product-companies {
+  margin-bottom: 50px !important;
+}
+.container {
+  position: absolute !important;
+  top: 50% !important;
+  margin-bottom: 50px !important;
+}
+.movie__detailRightTop {
+  background-image: linear-gradient(
+    rgb(0, 0, 0, 0),
+    rgb(0, 0, 0, 1)
+  ) !important;
+}
+@media (max-width: 768px) {
+  .container {
+    position: relative !important;
+  }
+}
