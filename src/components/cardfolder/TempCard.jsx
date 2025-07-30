@@ -4,7 +4,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 import "./card.css";
 import { Link } from "react-router-dom";
 
-const Card = ({ movie }) => {
+const TempCard = ({ movie }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -58,4 +58,4 @@ const Card = ({ movie }) => {
   );
 };
 
-export default Card;
+export default TempCard;

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./movieList.css";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import Cards from "../cardfolder/card";
+import Cards from "../cardfolder/TempCard";
 
 const MovieList = () => {
   const [movieList, setMovieList] = useState([]);
